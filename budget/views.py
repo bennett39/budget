@@ -4,7 +4,6 @@ from django.template import loader
  
 from .fetchdata import fetch_accounts_json, fetch_transactions_json
 from .forms import SmsAuthenticationForm, PersonalCapitalLoginForm
-#  from .secrets import pc_email, pc_password
 
 from datetime import datetime, timedelta
 from personalcapital import PersonalCapital, RequireTwoFactorException,\
