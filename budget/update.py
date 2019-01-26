@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from personalcapital import PersonalCapital, RequireTwoFactorException, TwoFactorVerificationModeEnum
 
 import getpass
@@ -5,10 +6,16 @@ import json
 import logging
 import os
 from datetime import datetime, timedelta
+=======
+import getpass
+import logging
+import os
+>>>>>>> 8368a74
 
 from cs50 import SQL
 from flask import redirect, render_template, request, session
 
+<<<<<<< HEAD
 def api_accounts(pc):
     """
     Fetch accounts data from Personal Capital API
@@ -43,6 +50,8 @@ def api_txs(pc):
     return transactions_response.json()
 
 
+=======
+>>>>>>> 8368a74
 def update_accounts(accounts, db):
     """Use API accounts data to update database tables"""
     for i in accounts['spData']['accounts']:
