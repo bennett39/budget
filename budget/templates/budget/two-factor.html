@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>2FA</title>
+  </head>
+  <body>
+    <form action="/two-factor" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
