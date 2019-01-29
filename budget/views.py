@@ -57,6 +57,7 @@ def two_factor(request):
 
             accounts = fetch_accounts_json(pc)
             transactions = fetch_transactions_json(pc)
+
             reply = f"Networth: {accounts['spData']['networth']}"
             reply += "Transaction: "
             reply += f"{transactions['spData']['transactions'][0]['description']}"
